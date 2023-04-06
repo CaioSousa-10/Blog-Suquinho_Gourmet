@@ -42,6 +42,7 @@
             margin: 0 auto;
             max-width: 1096px;
         }
+
         .conteudo-topo {
             font-size: 1.6rem;
             background-color: #fff;
@@ -52,8 +53,20 @@
             padding-top: 8rem;
         }
 
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 1.9rem;
+        }
+
         h3 {
             font-size: 2rem;
+        }
+
+        h4 {
+            font-size: 1.6rem;
         }
 
         figure {
@@ -72,6 +85,22 @@
                 width: 90%;
                 height: 70%;
             }
+        }
+
+        #grid-conteudo {
+            background-color: #dcdcdc;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-gap: 1.5px;
+            margin: 0 auto;
+        }
+        .grid div {
+            background-color: #fff;
+            text-align: center;
+            padding: 0.30rem;
         }
     </style>
 </head>
@@ -168,6 +197,18 @@
         <br>
         <p>Existem vários tipos de sabores de suquinhos gourmet, para todos os tipos de gostos.</p>
         <p>Na Tabela abaixo estão alguns dos mais famosos e apreciados em todo o mundo.</p>
+    </section>
+    <br>
+    <section class="conteudo" id="grid-conteudo">
+        <div class="grid">
+            <div>Ninho Trufado</div>
+            <div>Chocotudo</div>
+            <div>Sensação</div>
+            <div>Beijinho</div>
+            <div>Brigadeiro</div>
+            <div>Delícia de Abacaxi</div>
+
+        </div>
     </section>
     <br>
     <footer>
