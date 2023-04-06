@@ -23,6 +23,8 @@
             font-size: 1.8rem;
             padding: 1rem;
             padding-top: 2rem;
+            position: fixed;
+            width: 100%;
         }
 
         footer {
@@ -35,13 +37,41 @@
         .conteudo {
             font-size: 1.6rem;
             background-color: #fff;
-            padding: 1rem;
+            padding: 1.5rem;
+            text-align: justify;
             margin: 0 auto;
-
+            max-width: 1096px;
+        }
+        .conteudo-topo {
+            font-size: 1.6rem;
+            background-color: #fff;
+            padding: 1.5rem;
+            text-align: justify;
+            margin: 0 auto;
+            max-width: 1096px;
+            padding-top: 8rem;
         }
 
         h3 {
             font-size: 2rem;
+        }
+
+        figure {
+            text-align: center;
+        }
+
+        .imagem-site {
+            border-radius: 10px 10px 50px 10px;
+            width: 40%;
+            height: 20%;
+        }
+
+        @media(min-width:280px) and (max-width:450px) {
+            .imagem-site {
+                border-radius: 10px 10px 50px 10px;
+                width: 90%;
+                height: 70%;
+            }
         }
     </style>
 </head>
@@ -49,11 +79,15 @@
 <body>
     <header>
         <h3>SUQUINHOS GOURMET</h3>
-        <h4>"Dinheiro não compra Felicidade, mas compra suquinho Gourmet!"</h4>
+        <h4>"A vida é melhor com suquinhos gourmet"</h4>
     </header>
-    <br> 
-    <section class="conteudo">
+    <br>
+    <section class="conteudo-topo">
         <h1>Origem do Termo Gourmet</h1>
+        <figure>
+            <img class="imagem-site" src="img/imagem-suquinho-1.jpg">
+            <figcaption>Suquinho gourmet de chocolate</figcaption>
+        </figure>
         <br>
         <p>
             <strong>Gourmet</strong> é o nome que se dá um estilo de culinária mais elaborada, requintada e que atende
@@ -91,6 +125,10 @@
     <br>
     <section class="conteudo">
         <h2>Receita Simples</h2>
+        <figure>
+            <img class="imagem-site" src="img/imagem-suquinho-2.jpg" alt="sugunda imagem de suquinho gourmet">
+            <figcaption>Suquinho gourmet ninho com nutela.</figcaption>
+        </figure>
         <br>
         <h4>Modo de Preparo: </h4>
         <p>
@@ -107,7 +145,8 @@
             <br>
             6.DICA: cerca de 20g de chocolate derretido para cada geladinho.<br>
             <br>
-            7.Aperte o saquinho de geladinho, espalhando o chocolate, deixando sem chocolate apenas a parte que irá dar o
+            7.Aperte o saquinho de geladinho, espalhando o chocolate, deixando sem chocolate apenas a parte que irá dar
+            o
             nó.<br>
             <br>
             8.DICA: não deixe bolhas de ar.<br>
