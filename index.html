@@ -97,11 +97,49 @@
             grid-gap: 1.5px;
             margin: 0 auto;
         }
+        
         .grid div {
             background-color: #fff;
             text-align: center;
             padding: 0.30rem;
         }
+        
+        #formulario {
+            background-color: #dcdcdc;
+        }
+
+        input {
+            border: solid;
+            padding: 5px;
+            border-radius: 8px;
+            font-size: 1.8rem;
+        }
+
+        #mensagem {
+            border: solid;
+            padding: 5px;
+            border-radius: 8px;
+            font-size: 1.8rem;
+        }
+
+        #btn-limpar {
+            background-color: #06e6d3;
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        #btn-enviar {
+            background-color: #39d783;
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
     </style>
 </head>
 
@@ -209,6 +247,41 @@
             <div>Delícia de Abacaxi</div>
 
         </div>
+    </section>
+    <br>
+    <section class="conteudo" id="formulario">
+        <h2>Selecione um produto para mais informações</h2>
+        <br>
+        <form action="#" method="get" target="_blank">
+
+            <label for="nome">Nome</label><br>
+            <input type="text" id="nome" name="nome" placeholder="Digite o seu nome">
+            <br><br>
+
+            <label for="tel">Telefone</label><br>
+            <input type="tel" id="tel" name="tel" placeholder="Digite seu cell com ddd">
+            <br><br>
+
+            <input type="checkbox" id="opcoes" name="Ninho Trufado" value="Ninho trufado">
+            <label for="Ninho Trufado">Quero saber mais sobre o Gourmet Ninho Trufado</label>
+            <br><br>
+
+            <input type="checkbox" id="opcoes" name="Chocotudo" value="Chocotudo">
+            <label for="Chocotudo">Quero saber mais sobre o Gourmet Chocotudo</label>
+            <br><br>
+
+            <input type="checkbox" id="opcoes" name="Beijinho" value="Beijinho">
+            <label for="Beijinho">Quero saber mais sobre o Gourmet Beijinho</label>
+            <br><br>
+
+            <label for="mensagem">Deixe a sua mensagem (opcional):</label>
+            <br><br>
+            <textarea id="mensagem" cols="50" rows="5"></textarea>
+            <br><br>
+
+            <button id="btn-limpar" type="reset" value="LIMPAR">LIMPAR</button>&nbsp;
+            <button id="btn-enviar" type="submit" value="ENVIAR">ENVIAR</button>
+        </form>
     </section>
     <br>
     <footer>
